@@ -19,7 +19,7 @@ Leave autocomplete as-is, or just use Claude 3.5 Haiku
     "model": "claude-3-5-haiku-latest",
     "provider": "anthropic",
     "apiKey": "<INSERT SHARED API KEY HERE>"
-  },
+  }
 ```
 
 Note, continue.dev allows use of tools!
