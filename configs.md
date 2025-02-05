@@ -26,6 +26,15 @@ Note, continue.dev allows use of tools!
 
 Moreover, Continue.dev recommends to run `Qwen2.5-Coder 1.5B` with Ollama locally for autocomplete.
 
+Install ollama and run commands in separate terminals:
+
+```bash
+ollama serve
+ollama run qwen2.5-coder:1.5b-base
+```
+
+Just say `/bye` to `ollama run` terminal, it was just needed to download and start the model. Let `ollama serve` to run.
+
 This will use Q4_K_M quantized model, which is approximately 986MB. If your hardware allows use 3B version.
 
 ```json
