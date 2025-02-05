@@ -56,7 +56,16 @@ aider --model sonnet --api-key anthropic=<INSERT SHARED API KEY HERE>
 
 Another option is to set environment variables:
 
+Mac/Linux
+
 ```bash
-export ANTHROPIC_API_KEY=<key> # Mac/Linux
-setx   ANTHROPIC_API_KEY <key> # Windows, restart shell after setx
+export ANTHROPIC_API_KEY=<INSERT SHARED API KEY HERE>
 ```
+
+Windows
+
+```bash
+setx   ANTHROPIC_API_KEY <INSERT SHARED API KEY HERE>
+```
+
+Restart shell!
