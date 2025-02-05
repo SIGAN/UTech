@@ -8,10 +8,9 @@ Eve: the day or period of time immediately before an event or occasion.
 
 # Links
 1. [Prompts](prompts.md)
-2. [Configs](configs.md)
-3. [Eve Source Code](eve)
-4. [Tasks](tasks.md)
-5. [Configs](configs.md)
+2. [Tasks](tasks.md)
+3. [Configs](configs.md)
+4. [Eve Source Code](eve)
 
 # Disclaimer
 Thank you!
