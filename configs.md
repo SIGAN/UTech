@@ -29,13 +29,11 @@ Moreover, Continue.dev recommends to run `Qwen2.5-Coder 1.5B` with Ollama locall
 This will use Q4_K_M quantized model, which is approximately 986MB. If your hardware allows use 3B version.
 
 ```json
-{
   "tabAutocompleteModel": {
     "title": "Qwen2.5-Coder 1.5B",
     "provider": "ollama",
     "model": "qwen2.5-coder:1.5b-base"
-  }
-}
+  },
 ```
 
 # aider
