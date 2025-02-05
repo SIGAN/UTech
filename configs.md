@@ -3,10 +3,11 @@
 Update Config.json and keep only one model
 ```json
     {
-      "model": "claude-3-5-sonnet-latest",
+      "model": "claude-3-5-haiku-latest",
       "provider": "anthropic",
       "apiKey": "<INSERT SHARED API KEY HERE>",
-      "title": "Claude 3.5 Sonnet"
+      "title": "Claude 3.5 Haiku"
+      "provider": "anthropic",
     }
 ```
 
