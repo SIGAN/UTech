@@ -24,9 +24,8 @@ All scripts must run within context of "/workspace/eve", so that all SQLite data
 Follow up
 -----
 Context: 
-I am building new event planner application called "Eve". It is in "/workspace/eve", please read README.md to acquire full context, you must follow what is documented. 
-Please init database first and assign permissions. Run unit tests, run API testing script (output actions, expectations, and re-read and output modified entity after each action). 
-Please update README.md once something changes and completed. 
+I am building new event planner application called "Eve". Project root is "/workspace/eve", please read /workspace/eve/README.md to acquire full context, you must follow what is documented. 
+Please update README.md once project changes or task completed. 
 PORTS MUST BE: Frontend - 2020, Backend - 2021. 
 All scripts must be in eve folder AND it should run the rest from the context of "/workspace/eve". All database paths are "data/eve.db". Do not hardcode "/workspace/eve", just always store and start scripts at "/workspace/eve". 
 Ask for explicit permission to change any existing approach, framework. 
@@ -35,6 +34,6 @@ Use sudo to install global packages/tools. Identify current OS.
 Other python and node processes are running, please kill only Eve processes.
 Keep e2e test timeouts as-is, if something fails - it is not timeout.
 Use backend, frontend, and test logs to identify issues with e2e tests.
-Use setup.sh to start.
+Use setup.sh, be patient and look at estimated time to install.
 Task: ...
 
