@@ -3,3 +3,4 @@ venv
 .angular
 node_modules
 .DS_Store
+.aider*
