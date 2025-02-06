@@ -1,0 +1,30 @@
+.events-container {
+  padding: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  margin-bottom: 20px;
+}
+
+.event-card mat-card-content {
+  margin-top: 16px;
+}
+
+.event-card mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}

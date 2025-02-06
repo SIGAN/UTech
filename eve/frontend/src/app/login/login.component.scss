@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+  padding: $spacing-unit * 2;
+
+  mat-card {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.form-field-full-width {
+  width: 100%;
+  margin-bottom: $spacing-unit * 2;
+}

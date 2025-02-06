@@ -1,0 +1,43 @@
+@use '@angular/material' as mat;
+@use 'styles/variables' as *;
+@use 'styles/shared';
+
+// Material theme
+@include mat.core();
+
+$eve-primary: mat.define-palette(mat.$deep-purple-palette);
+$eve-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+$eve-warn: mat.define-palette(mat.$red-palette);
+
+$eve-theme: mat.define-light-theme((
+  color: (
+    primary: $eve-primary,
+    accent: $eve-accent,
+    warn: $eve-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+@include mat.all-component-themes($eve-theme);
+
+// Base styles
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  font-family: $font-family;
+}
+
+// Container
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: $spacing-unit * 2;
+}
+
+// Responsive adjustments
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding: $spacing-unit;
+  }
+}

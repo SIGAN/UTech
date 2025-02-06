@@ -1,0 +1,14 @@
+@use '../../../styles/variables' as *;
+
+:host {
+  display: block;
+  padding: $spacing-unit;
+}
+
+mat-dialog-content {
+  margin: $spacing-unit 0;
+}
+
+mat-dialog-actions {
+  margin-bottom: 0;
+}

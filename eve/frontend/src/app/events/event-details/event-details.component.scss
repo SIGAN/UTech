@@ -1,0 +1,50 @@
+@use '../../../styles/variables' as *;
+
+.event-details-container {
+  max-width: 800px;
+  margin: $spacing-unit * 2 auto;
+  padding: 0 $spacing-unit * 2;
+}
+
+.back-button {
+  margin-bottom: $spacing-unit * 2;
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit;
+}
+
+.comments-section {
+  margin-top: $spacing-unit * 3;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit * 2;
+  margin-bottom: $spacing-unit * 2;
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit * 2;
+}
+
+mat-radio-group {
+  display: flex;
+  gap: $spacing-unit * 1.5;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit * 2;
+}
+
+.comment-item {
+  margin-bottom: $spacing-unit * 2;
+}
+
+mat-form-field {
+  width: 100%;
+}

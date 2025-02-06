@@ -1,0 +1,68 @@
+<div class="event-details-container" *ngIf="event">
+  <button mat-raised-button color="primary" (click)="goBack()" class="back-button">
+    <mat-icon>arrow_back</mat-icon> Back
+  </button>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ event.title }}</mat-card-title>
+      <mat-card-subtitle *ngIf="event.start_time">{{ dateService.formatForDisplay(event.start_time) }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p *ngIf="event.description">{{ event.description }}</p>
+      <p *ngIf="event.place"><strong>Location:</strong> {{ event.place }}</p>
+      <p *ngIf="event.start_time"><strong>Start:</strong> {{ dateService.formatForDisplay(event.start_time) }}</p>
+      <p *ngIf="event.end_time"><strong>End:</strong> {{ dateService.formatForDisplay(event.end_time) }}</p>
+      <p *ngIf="event.food"><strong>Food:</strong> {{ event.food }}</p>
+      <p *ngIf="event.drinks"><strong>Drinks:</strong> {{ event.drinks }}</p>
+      <p *ngIf="event.program"><strong>Program:</strong> {{ event.program }}</p>
+      <p *ngIf="event.parking_info"><strong>Parking:</strong> {{ event.parking_info }}</p>
+      <p *ngIf="event.music"><strong>Music:</strong> {{ event.music }}</p>
+      <p *ngIf="event.theme"><strong>Theme:</strong> {{ event.theme }}</p>
+      <p *ngIf="event.age_restrictions"><strong>Age Restrictions:</strong> {{ event.age_restrictions }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="comments-section">
+    <h3>Comments</h3>
+    <form [formGroup]="commentForm" (ngSubmit)="addComment()" class="comment-form">
+      <mat-form-field appearance="fill">
+        <mat-label>Add a comment</mat-label>
+        <textarea matInput formControlName="message" required></textarea>
+        <mat-error *ngIf="commentForm.get('message')?.hasError('required')">
+          Comment message is required
+        </mat-error>
+      </mat-form-field>
+
+      <div class="rating-group">
+        <label>Rating:</label>
+        <mat-radio-group formControlName="rating">
+          <mat-radio-button [value]="1">1</mat-radio-button>
+          <mat-radio-button [value]="2">2</mat-radio-button>
+          <mat-radio-button [value]="3">3</mat-radio-button>
+          <mat-radio-button [value]="4">4</mat-radio-button>
+          <mat-radio-button [value]="5">5</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="commentForm.invalid">
+        Add Comment
+      </button>
+    </form>
+
+    <div class="comments-list">
+      <mat-card *ngFor="let comment of comments" class="comment-item" [attr.data-comment-id]="comment.id">
+        <mat-card-header>
+          <mat-card-subtitle>{{ comment.author_email }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ comment.message }}</p>
+          <p *ngIf="comment.rating > 0">Rating: {{ comment.rating }}/5</p>
+        </mat-card-content>
+        <mat-card-actions *ngIf="canModifyComment(comment)">
+          <button mat-button (click)="editComment(comment)">Edit</button>
+          <button mat-button (click)="deleteComment(comment)">Delete</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

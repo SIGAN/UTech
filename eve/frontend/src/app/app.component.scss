@@ -1,0 +1,17 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+mat-card {
+  margin-bottom: 20px;
+}
+
+mat-card-content {
+  padding: 16px;
+  
+  button {
+    margin-right: 8px;
+  }
+}

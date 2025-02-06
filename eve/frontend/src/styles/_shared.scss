@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+// Common form styles
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-unit * 2;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: $spacing-unit * 2;
+}
+
+// Common card styles
+.card {
+  margin-bottom: $spacing-unit * 2;
+}
+
+// Common button styles
+.button-row {
+  display: flex;
+  gap: $spacing-unit;
+  margin: $spacing-unit * 2 0;
+  justify-content: flex-end;
+}
+
+// Error styles
+.error-snackbar {
+  background: $error;
+  color: white;
+  
+  .mat-simple-snackbar-action {
+    color: white;
+  }
+}
+
+.error-message {
+  color: $error;
+  font-size: 14px;
+  margin: $spacing-unit 0;
+}

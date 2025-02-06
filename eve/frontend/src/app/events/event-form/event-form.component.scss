@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as *;
+
+.event-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-unit * 2;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-unit * 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit * 2;
+}
+
+.datetime-row {
+  display: flex;
+  gap: $spacing-unit * 2;
+
+  mat-form-field {
+    flex: 1;
+  }
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-unit;
+  margin-top: $spacing-unit * 2;
+}
+
+mat-form-field {
+  width: 100%;
+}

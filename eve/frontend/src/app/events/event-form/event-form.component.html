@@ -1,0 +1,95 @@
+<div class="event-form-container">
+  <div class="header-row">
+    <h2>{{ isEditMode ? 'Edit Event' : 'Create New Event' }}</h2>
+    <button mat-raised-button color="primary" (click)="onLogout()">Logout</button>
+  </div>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" required>
+      <mat-error *ngIf="eventForm.get('title')?.hasError('required')">
+        Title is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Place</mat-label>
+      <input matInput formControlName="place">
+    </mat-form-field>
+
+    <div class="datetime-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="startPicker" formControlName="start_date">
+        <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+        <mat-datepicker #startPicker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Start Time</mat-label>
+        <input matInput type="time" formControlName="start_time">
+      </mat-form-field>
+    </div>
+
+    <div class="datetime-row">
+      <mat-form-field appearance="fill">
+        <mat-label>End Date</mat-label>
+        <input matInput [matDatepicker]="endPicker" formControlName="end_date">
+        <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+        <mat-datepicker #endPicker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>End Time</mat-label>
+        <input matInput type="time" formControlName="end_time">
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Food</mat-label>
+      <input matInput formControlName="food">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Drinks</mat-label>
+      <input matInput formControlName="drinks">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Program</mat-label>
+      <textarea matInput formControlName="program"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Parking Info</mat-label>
+      <input matInput formControlName="parking_info">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Music</mat-label>
+      <input matInput formControlName="music">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Theme</mat-label>
+      <input matInput formControlName="theme">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Age Restrictions</mat-label>
+      <input matInput formControlName="age_restrictions">
+    </mat-form-field>
+
+    <div class="button-row">
+      <button mat-button type="button" (click)="onCancel()">Cancel</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="eventForm.invalid">
+        {{ isEditMode ? 'Update' : 'Create' }}
+      </button>
+    </div>
+  </form>
+</div>

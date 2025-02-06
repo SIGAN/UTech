@@ -1,0 +1,9 @@
+fastapi==0.115.8
+uvicorn==0.34.0
+sqlalchemy==2.0.37
+pytest==8.3.4
+python-dateutil==2.9.0
+requests==2.31.0
+pydantic==2.10.6
+python-multipart==0.0.9
+email-validator==2.1.0.post1
