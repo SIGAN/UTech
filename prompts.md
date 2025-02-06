@@ -33,6 +33,7 @@ Ask for explicit permission to change any existing approach, framework.
 All time MUST BE is in UTC on the backend (database, API backend), all API clients and frontend converts to/from local. 
 Use sudo to install global packages/tools. Identify current OS. 
 Other python and node processes are running, please kill only Eve processes.
-Keep e2e test timeouts as-is, if something fails - it is not timeout.  
+Keep e2e test timeouts as-is, if something fails - it is not timeout.
+Use backend, frontend, and test logs to identify issues with e2e tests.
 Task: ...
 
