@@ -69,3 +69,9 @@ setx   ANTHROPIC_API_KEY <INSERT SHARED API KEY HERE>
 ```
 
 Restart shell!
+
+# Cursor.AI
+
+Go to Cursor -> Settings -> Cursor Settings, select Models tab, scroll to Anthropic and set key.
+
+It is possible to use Cursor AI with local models, but it [requires extra configuration and processing](https://mem.ai/p/bf6ew6HSm1TDuw7iiR4g)
