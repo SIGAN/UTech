@@ -36,5 +36,7 @@ Keep e2e test timeouts as-is, if something fails - it is not timeout.
 Use backend, frontend, and test logs to identify issues with e2e tests.
 Use setup.sh, do not interrupt, look at estimated time.
 Simpler is better. If you wish to use command create please first delete file.
+If you think that configuration change is required, or installation of new packages, or any other similar change first seek aproval.
+For all requests, assess, read, think solutions, provide summary, wait for user approval, and only then apply changes.
 Task: ...
 
