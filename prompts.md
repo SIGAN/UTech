@@ -32,5 +32,6 @@ All scripts must be in eve folder AND it should run the rest from the context of
 Ask for explicit permission to change any existing approach, framework. 
 All time MUST BE is in UTC on the backend (database, API backend), all API clients and frontend converts to/from local. 
 Use sudo to install global packages/tools. Identify current OS. 
+Other python and node processes are running, please kill only Eve processes.
 Task: ...
 
