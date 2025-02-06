@@ -21,6 +21,7 @@ Check/define schema, Check/Define Backend, Run/Build unit tests, Run/Build API t
 Make sure to ask before upgrading any framework or any approach change. 
 All scripts must run within context of "/workspace/eve", so that all SQLite database paths are "data/eve.db", thus all scripts must be stored in the root "/workspace/eve". Do not hardcode "/workspace/eve", just always store and start scripts at "/workspace/eve".
 Assess, evaluate, prepare specifications, review with user, and only after user approval continue.
+If you want to replace entire file, delete original file before using "create" command.
 
 Follow up
 -----
@@ -39,5 +40,6 @@ Use setup.sh, do not interrupt, look at estimated time.
 Simpler is better. If you wish to use command create please first delete file.
 If you think that configuration change is required, or installation of new packages, or any other similar change first seek aproval.
 For all requests, assess, read, think solutions, provide summary, wait for user approval, and only then apply changes.
+If you want to replace entire file, delete original file before using "create" command.
 Task: ...
 
