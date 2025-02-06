@@ -2,3 +2,4 @@ __pycache__
 venv
 .angular
 node_modules
+.DS_Store
