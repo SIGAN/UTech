@@ -20,6 +20,7 @@ Please init database first and assign permissions.
 Check/define schema, Check/Define Backend, Run/Build unit tests, Run/Build API testing script (output actions, expectations, and re-read and output modified entity after each action). In the end it should cleanup everything (but eve.db file must always stay!).
 Make sure to ask before upgrading any framework or any approach change. 
 All scripts must run within context of "/workspace/eve", so that all SQLite database paths are "data/eve.db", thus all scripts must be stored in the root "/workspace/eve". Do not hardcode "/workspace/eve", just always store and start scripts at "/workspace/eve".
+Assess, evaluate, prepare specifications, review with user, and only after user approval continue.
 
 Follow up
 -----
