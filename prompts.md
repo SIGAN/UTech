@@ -34,6 +34,6 @@ Use sudo to install global packages/tools. Identify current OS.
 Other python and node processes are running, please kill only Eve processes.
 Keep e2e test timeouts as-is, if something fails - it is not timeout.
 Use backend, frontend, and test logs to identify issues with e2e tests.
-Use setup.sh, be patient and look at estimated time to install.
+Use setup.sh, do not interrupt, look at estimated time.
 Task: ...
 
